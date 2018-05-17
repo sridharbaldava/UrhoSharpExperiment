@@ -21,13 +21,13 @@
 // THE SOFTWARE.
 //
 
+using System;
 using System.Diagnostics;
 using System.Globalization;
 using Urho.Resources;
 using Urho.Gui;
-using Urho;
 
-namespace UrhoSharpExperiment
+namespace Urho.Samples
 {
 	public class Sample : Application
 	{
@@ -65,7 +65,7 @@ namespace UrhoSharpExperiment
 			set { logoSprite.Visible = value; }
 		}
 		
-		static readonly System.Random random = new System.Random();
+		static readonly Random random = new Random();
 		/// Return a random float between 0.0 (inclusive) and 1.0 (exclusive.)
 		public static float NextRandom() { return (float)random.NextDouble(); }
 		/// Return a random float between 0.0 and range, inclusive from both ends.
@@ -320,7 +320,7 @@ namespace UrhoSharpExperiment
 				case Key.N9:
 					Image screenshot = new Image();
 					Graphics.TakeScreenShot(screenshot);
-					screenshot.SavePNG(FileSystem.ProgramDir + $"Data/Screenshot_{GetType().Name}_{System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss", CultureInfo.InvariantCulture)}.png");
+					screenshot.SavePNG(FileSystem.ProgramDir + $"Data/Screenshot_{GetType().Name}_{DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss", CultureInfo.InvariantCulture)}.png");
 					break;
 			}
 		}

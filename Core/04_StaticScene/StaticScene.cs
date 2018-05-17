@@ -24,11 +24,10 @@
 using SAP2000v18;
 using System;
 using System.Collections.Generic;
-using Urho;
 using Urho.Actions;
 using Urho.Shapes;
 
-namespace UrhoSharpExperiment
+namespace Urho.Samples
 {
 	public class StaticScene : Sample
 	{
