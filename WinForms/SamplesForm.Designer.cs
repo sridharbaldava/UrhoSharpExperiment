@@ -28,21 +28,9 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.samplesListbox = new System.Windows.Forms.ListBox();
             this.urhoSurfacePlaceholder = new System.Windows.Forms.Panel();
+            this.LoadModelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // samplesListbox
-            // 
-            this.samplesListbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.samplesListbox.FormattingEnabled = true;
-            this.samplesListbox.Location = new System.Drawing.Point(8, 8);
-            this.samplesListbox.Margin = new System.Windows.Forms.Padding(2);
-            this.samplesListbox.Name = "samplesListbox";
-            this.samplesListbox.Size = new System.Drawing.Size(124, 498);
-            this.samplesListbox.TabIndex = 0;
-            this.samplesListbox.SelectedIndexChanged += new System.EventHandler(this.samplesListbox_SelectedIndexChanged);
             // 
             // urhoSurfacePlaceholder
             // 
@@ -56,13 +44,23 @@
             this.urhoSurfacePlaceholder.Size = new System.Drawing.Size(792, 499);
             this.urhoSurfacePlaceholder.TabIndex = 1;
             // 
+            // LoadModelButton
+            // 
+            this.LoadModelButton.Location = new System.Drawing.Point(8, 10);
+            this.LoadModelButton.Name = "LoadModelButton";
+            this.LoadModelButton.Size = new System.Drawing.Size(124, 32);
+            this.LoadModelButton.TabIndex = 2;
+            this.LoadModelButton.Text = "Load Model";
+            this.LoadModelButton.UseVisualStyleBackColor = true;
+            this.LoadModelButton.Click += new System.EventHandler(this.LoadModelButton_Click);
+            // 
             // SamplesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(940, 513);
+            this.Controls.Add(this.LoadModelButton);
             this.Controls.Add(this.urhoSurfacePlaceholder);
-            this.Controls.Add(this.samplesListbox);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SamplesForm";
             this.Text = "UrhoSharp Samples";
@@ -71,9 +69,8 @@
 		}
 
 		#endregion
-
-		private System.Windows.Forms.ListBox samplesListbox;
 		private System.Windows.Forms.Panel urhoSurfacePlaceholder;
-	}
+        private System.Windows.Forms.Button LoadModelButton;
+    }
 }
 

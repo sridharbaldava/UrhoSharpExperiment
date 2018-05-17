@@ -17,26 +17,17 @@ namespace Urho.Samples.WinForms
 		public SamplesForm()
 		{
 			InitializeComponent();
-			DesktopUrhoInitializer.AssetsDirectory = @"../../Assets";
-			var sampleTypes = typeof(Sample).Assembly.GetTypes()
-				.Where(t => t.IsSubclassOf(typeof(Application)) && t != typeof(Sample))
-				.ToArray();
-			samplesListbox.DisplayMember = "Name";
-			samplesListbox.Items.AddRange(sampleTypes);
+			DesktopUrhoInitializer.AssetsDirectory = @"../../Assets";			
 
 			surface = new UrhoSurface();
 			surface.Dock = DockStyle.Fill;
 			urhoSurfacePlaceholder.Controls.Add(surface);
 
-//			samplesListbox.SelectedIndex = 19; //Water by default
 		}
 
-		async void samplesListbox_SelectedIndexChanged(object sender, EventArgs e)
-		{
-			var type = (Type)samplesListbox.SelectedItem;
-			if (type == null)
-				return;
-			var app = await surface.Show(type, new ApplicationOptions("Data"));
-		}
-	}
+        private async void LoadModelButton_Click( object sender, EventArgs e )
+        {
+            var app = await surface.Show(typeof(StaticScene), new ApplicationOptions("Data"));
+        }
+    }
 }
