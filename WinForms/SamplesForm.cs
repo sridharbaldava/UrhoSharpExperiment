@@ -28,7 +28,7 @@ namespace Urho.Samples.WinForms
 			surface.Dock = DockStyle.Fill;
 			urhoSurfacePlaceholder.Controls.Add(surface);
 
-			samplesListbox.SelectedIndex = 19; //Water by default
+//			samplesListbox.SelectedIndex = 19; //Water by default
 		}
 
 		async void samplesListbox_SelectedIndexChanged(object sender, EventArgs e)

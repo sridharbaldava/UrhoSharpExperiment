@@ -60,7 +60,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SAP2000v18">
-      <HintPath>..\..\..\..\..\..\Program Files\Computers and Structures\SAP2000 18\SAP2000v18.dll</HintPath>
+      <HintPath>C:\Program Files\Computers and Structures\SAP2000 18\SAP2000v18.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -73,50 +73,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="01_HelloWorld\HelloWorld.cs" />
-    <Compile Include="02_HelloGUI\HelloGUI.cs" />
-    <Compile Include="03_Sprites\Sprites.cs" />
     <Compile Include="04_StaticScene\StaticScene.cs" />
-    <Compile Include="05_AnimatingScene\AnimatingScene.cs" />
-    <Compile Include="06_SkeletalAnimation\SkeletalAnimation.cs" />
-    <Compile Include="07_Billboards\Billboards.cs" />
-    <Compile Include="08_Decals\Decals.cs" />
-    <Compile Include="09_MultipleViewports\MultipleViewports.cs" />
-    <Compile Include="10_RenderToTexture\RenderToTexture.cs" />
-    <Compile Include="11_Physics\Physics.cs" />
-    <Compile Include="12_PhysicsStressTest\PhysicsStressTest.cs" />
-    <Compile Include="13_Ragdolls\Ragdoll.cs" />
-    <Compile Include="13_Ragdolls\Ragdolls.cs" />
-    <Compile Include="14_SoundEffects\SoundEffects.cs" />
-    <Compile Include="15_Navigation\Navigation.cs" />
-    <Compile Include="16_Chat\Chat.cs" />
-    <Compile Include="18_CharacterDemo\Character.cs" />
-    <Compile Include="18_CharacterDemo\CharacterDemo.cs" />
-    <Compile Include="18_CharacterDemo\Touch.cs" />
-    <Compile Include="19_VehicleDemo\Vehicle.cs" />
-    <Compile Include="19_VehicleDemo\VehicleDemo.cs" />
-    <Compile Include="20_HugeObjectCount\HugeObjectCount.cs" />
-    <Compile Include="23_Water\Water.cs" />
-    <Compile Include="24_Urho2DSprite\Urho2DSprite.cs" />
-    <Compile Include="25_Urho2DParticles\Urho2DParticle.cs" />
-    <Compile Include="26_ConsoleInput\ConsoleInput.cs" />
-    <Compile Include="27_Urho2DPhysics\Urho2DPhysics.cs" />
-    <Compile Include="28_Urho2DPhysicsRope\Urho2DPhysicsRope.cs" />
-    <Compile Include="29_SoundSynthesis\SoundSynthesis.cs" />
-    <Compile Include="30_LightAnimation\LightAnimation.cs" />
-    <Compile Include="31_MaterialAnimation\MaterialAnimation.cs" />
-    <Compile Include="32_Urho2DConstraints\Urho2DConstraints.cs" />
-    <Compile Include="33_Urho2DSpriterAnimation\Urho2DSpriterAnimation.cs" />
-    <Compile Include="34_DynamicGeometry\DynamicGeometry.cs" />
-    <Compile Include="35_SignedDistanceFieldText\SignedDistanceFieldText.cs" />
-    <Compile Include="36_Urho2DTileMap\Urho2DTileMap.cs" />
-    <Compile Include="37_UIDrag\UIDrag.cs" />
-    <Compile Include="38_SceneAndUILoad\SceneAndUILoad.cs" />
-    <Compile Include="39_CrowdNavigation\CrowdNavigation.cs" />
-    <Compile Include="40_Actions\Actions.cs" />
-    <Compile Include="41_Charts\Charts.cs" />
-    <Compile Include="42_PBRMaterials\PBRMaterials.cs" />
-    <Compile Include="43_BasicTechniques\BasicTechniques.cs" />
     <Compile Include="JoystickLayoutPatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sample.cs" />
